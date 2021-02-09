@@ -1,2 +1,16 @@
 # personality_detection
-Code for personality detection from image and about text from linkedin user url
+Our main idea is to use image url and text from user profile and then passing it through image analysis model and text-analysis model to get the possibility of person being in personality traits from big 5 model namely: <ol> <li>extraversion</li> <li>agreeableness </li> <li> conscientiousness </li> <li> neurotiscism </li> <li> openness </li> </ol>
+
+<p> For Image analysis part we are using custom convolution network trained using mean squared loss regression loss and adam optimizer. The overall accuracy of over model for predicting personality trait is about 80% <br>
+Dataset pickle files link : https://drive.google.com/drive/folders/1U1fuZryj3R4rj6E7Umwbt9qefjMckCjA?usp=sharing
+</p>
+
+Training code for image analysis part is in personality_image.ipynb file you can directly open it in colab and run it.
+
+## Testing Instruction
+
+<ul>
+  <li> run pip install -r requirements.txt </li>
+  <li> run python configurator.py it will prompt you for your linkedin username(email) and password </li>
+  <li> run test.py like python test.py -u <linkedin user url>. Example: python test.py -u https://www.linkedin.com/in/sahil-nare-b96694179/</li>
+</ul>
