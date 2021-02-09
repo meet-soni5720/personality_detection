@@ -22,6 +22,6 @@ Training code for image analysis part is in personality_image.ipynb file you can
 
 <ul>
   <li> load model wieghts </li>
-  <li>  </li>
+  
   
 </ul>
