@@ -6,7 +6,7 @@ Our main idea is to use image url and text from user profile and then passing it
 model wieghts link : https://drive.google.com/drive/folders/1U1fuZryj3R4rj6E7Umwbt9qefjMckCjA?usp=sharing
 </p>
 
-<p> For Image analysis part we are using custom convolution network trained using mean squared loss regression loss and adam optimizer. The overall accuracy of over model for predicting personality trait is about 80% <br>
+<p> For Image analysis part we are using custom convolution network trained using mean squared loss(regression loss) and adam optimizer. The overall accuracy of over model for predicting personality trait is about 80% <br>
 Dataset pickle files link : https://drive.google.com/drive/folders/1U1fuZryj3R4rj6E7Umwbt9qefjMckCjA?usp=sharing
 </p>
 
