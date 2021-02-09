@@ -14,15 +14,16 @@ Training code for image analysis part is in personality_image.ipynb file you can
 
 ## Testing Instruction
 
+### For image ananlysis part
 <ul>
-  <li> run pip install -r requirements.txt </li>
-  <li> run python configurator.py it will prompt you for your linkedin username(email) and password </li>
+  <li> Run pip install -r requirements.txt </li>
+  <li> Run python configurator.py it will prompt you for your linkedin username(email) and password </li>
   <li> Download the weights from https://drive.google.com/drive/folders/1r8rIBKtnzF91gaxSdjFyYLn3Du4hpiiE?usp=sharing and store it in the project directory </li>
-  <li> run test.py like python test.py -u <linkedin user url>. Example: python test.py -u https://www.linkedin.com/in/sahil-nare-b96694179/</li>
+  <li> Run test.py like python test.py -u <linkedin user url>. Example: python test.py -u https://www.linkedin.com/in/sahil-nare-b96694179/</li>
 </ul>
 
+### For text analysis part
 <ul>
-  <li> load model wieghts </li>
-  
+  <li> Load model wieghts </li> 
   
 </ul>
