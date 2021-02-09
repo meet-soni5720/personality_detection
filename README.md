@@ -1,4 +1,4 @@
-# personality_detection
+# Personality Detection
 Our main idea is to use image url and text from user profile and then passing it through image analysis model and text-analysis model to get the possibility of person being in personality traits from big 5 model namely: <ol> <li>extraversion</li> <li>agreeableness </li> <li> conscientiousness </li> <li> neurotiscism </li> <li> openness </li> </ol>
 
 <p> For Text analysis part we are using pretrained <a href = "https://tfhub.dev/tensorflow/bert_en_uncased_preprocess/3">bert model for preprocessing</a> and <a href= "https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-4_H-512_A-8/1">smaller bert</a> from tensorflow_hub using mean squared loss BinaryCrossentropy loss and adamw optimizer. The overall accuracy of over model for predicting personality trait is about 50%<br> 
