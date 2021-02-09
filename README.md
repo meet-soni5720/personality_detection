@@ -23,7 +23,7 @@ Training code for image analysis part is in personality_image.ipynb file you can
 
 ## Instruction for  text analsysis
 <ul>
-  <li>run on colab</li>
+  <li>run text_analsysis.pynb on colab</li>
   <li> load model wieghts </li>
   
   
