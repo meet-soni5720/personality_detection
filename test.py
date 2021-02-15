@@ -1,4 +1,5 @@
 import json
+import os
 import sys
 import time
 from configparser import ConfigParser
@@ -10,6 +11,7 @@ import json
 import numpy as np
 import urllib
 import warnings
+import time
 
 warnings.filterwarnings("ignore")
 
@@ -34,7 +36,7 @@ headless_option = len(sys.argv) >= 2 and sys.argv[1].upper() == 'HEADLESS'
 if len(profiles_urls) == 0:
     print("Please provide an input.")
     sys.exit(0)
-
+t = time.time()
 
 # Launch Scraper
 s = Scraper(
@@ -74,5 +76,9 @@ print(img.shape)
 personality_traits = ['Extraversion', 'Agreeableness', 'Conscientiousness', 'Neurotisicm', 'Openness']
 y = model.predict(img)
 
-for i in range(len(personality_traits)):
-    print(f"{personality_traits[i]} ----------> {y[0][i]*100}%")
+output_dir = './output'
+op_file = str(args["url"]) + "_" + str(t) + ".txt"
+with open(os.path.join(output_dir, op_file), "a") as f:
+    for i in range(len(personality_traits)):
+        print(f"{personality_traits[i]} ----------> {y[0][i]*100}%")
+        f.write(f"{personality_traits[i]} ----------> {y[0][i]*100}%")
