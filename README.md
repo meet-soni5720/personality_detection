@@ -26,5 +26,8 @@ Training code for image analysis part is in personality_image.ipynb file you can
   <li>Run text_analsysis.pynb on colab</li>
   <li>Load model weights </li>
   
-  
 </ul>
+
+## Sentiment analysis part
+<p> Just run sentiment_analysis.ipynb. training data link : https://www.kaggle.com/cosmos98/twitter-and-reddit-sentimental-analysis-dataset <br>
+   work in progress: model saving and inference code will be added soon and this will be automated with twitter scraper which scraps comments of users on twitter and gives sentiment of each comment. <p>
